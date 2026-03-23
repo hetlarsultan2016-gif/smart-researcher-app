@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيق الباحث الذكي</title>
+</head>
+
+<body>
+
+<h1>تطبيق الباحث الذكي</h1>
+
+<p>ابحث عن أي شيء:</p>
+
+<input type="text" id="search" placeholder="اكتب بحثك هنا">
+<button onclick="search()">بحث</button>
+
+<p id="result"></p>
+
+<script>
+function search() {
+  let q = document.getElementById("search").value;
+  document.getElementById("result").innerText = "نتيجة البحث عن: " + q;
+}
+</script>
+
+</body>
+</html>
